@@ -235,7 +235,7 @@ export default function IndexPage() {
                           className="flex items-center justify-center w-full"
                         >
                           <TiltedCard
-                            imageSrc={`http://localhost:5000/db/${match.path}`}
+                            imageSrc={match.path}
                             altText="Match"
                             captionText={`${(match.distance * 100).toFixed(1)}%`}
                             containerHeight="300px"
