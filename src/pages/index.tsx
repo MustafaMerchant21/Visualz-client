@@ -1,5 +1,4 @@
 import { useCallback, useState } from "react";
-import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
@@ -25,7 +24,7 @@ import TiltedCard from "@/components/TiltedCard";
 export default function IndexPage() {
   const [isDragging, setIsDragging] = useState(false);
   const [uploading, setUploading] = useState(false);
-  const [uploadProgress, setUploadProgress] = useState(0);
+  // const [uploadProgress, setUploadProgress] = useState(0);
   const [loadingResults, setLoadingResults] = useState(false);
   const [matches, setMatches] = useState<any[]>([]);
   const [predictedPlace, setPredictedPlace] = useState<string | null>(null);
@@ -38,7 +37,7 @@ export default function IndexPage() {
 
     try {
       setUploading(true);
-      setUploadProgress(10);
+      // setUploadProgress(10);
 
       // Reset UI state
       setPredictedPlace(null);
@@ -61,7 +60,7 @@ export default function IndexPage() {
       setPredictedPlace(data.predicted_place || null);
       setGoogleMapsLink(data.google_maps_link || null);
       setMatches(data.matches || []);
-      setUploadProgress(100);
+      // setUploadProgress(100);
       setLoadingResults(false);
 
       if (isMatchFound) {
@@ -87,7 +86,7 @@ export default function IndexPage() {
       });
     } finally {
       setUploading(false);
-      setTimeout(() => setUploadProgress(0), 2000);
+      // setTimeout(() => setUploadProgress(0), 2000);
     }
   };
 
