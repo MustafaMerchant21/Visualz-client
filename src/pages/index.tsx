@@ -47,7 +47,7 @@ export default function IndexPage() {
       onClose();
       onOpen(); // Open modal with spinner
 
-      const res = await fetch("/upload", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/upload`, {
         method: "POST",
         body: formData,
       });
