@@ -13,7 +13,7 @@ export default function TechStackPage() {
         </div>
          
     <div className="relative overflow-hidden h-[500px] w-full border">
-          <OrbitingCircles className="border">
+          <OrbitingCircles>
             <File />
             <Settings />
             <File />
