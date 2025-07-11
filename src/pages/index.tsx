@@ -21,6 +21,7 @@ import Silk from "@/components/Silk";
 import GlareHover from "@/components/GlareHover";
 import TiltedCard from "@/components/TiltedCard";
 
+
 export default function IndexPage() {
   const [isDragging, setIsDragging] = useState(false);
   const [uploading, setUploading] = useState(false);

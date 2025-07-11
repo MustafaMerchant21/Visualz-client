@@ -19,7 +19,7 @@ export default function DefaultLayout({
             isExternal
             className="flex items-center gap-1 text-current"
             href={siteConfig.links.github}
-            title="heroui.com homepage"
+            title="Visualz homepage"
           >
             <span className="text-default-600">Made with ❤️ by </span>
             <p className="text-primary">Mustafa Merchant</p>
