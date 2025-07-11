@@ -48,7 +48,7 @@ export default function IndexPage() {
       onClose();
       onOpen(); // Open modal with spinner
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/upload`, {
+      const res = await fetch(`https://visualz-server.onrender.com/upload`, {
         method: "POST",
         body: formData,
       });
