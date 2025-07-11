@@ -13,7 +13,7 @@ export default function TechStackPage() {
         </div>
          
     <div className="relative overflow-hidden h-[500px] w-full border">
-          <OrbitingCircles>
+          {/* <OrbitingCircles>
             <File />
             <Settings />
             <File />
@@ -23,7 +23,7 @@ export default function TechStackPage() {
             <Settings />
             <File />
             <Search />
-          </OrbitingCircles>
+          </OrbitingCircles> */}
         </div>
       </section>
     </DefaultLayout>
